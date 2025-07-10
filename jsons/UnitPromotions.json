@@ -1,14 +1,26 @@
 [
   {
      "name": "Spotter I",
-     "prerequisites": ["Accuracy III","Barrage III"],
-     "uniques": ["[+1] Sight"],
+     "prerequisites": ["Rank II"],
+     "uniques": ["Can see over obstacles"],
      "unitTypes": ["Archery","Ranged Gunpowder","Siege"]
   },
   {
      "name": "Spotter II",
      "prerequisites": ["Spotter I"],
-     "uniques": ["Can see over obstacles"],
+     "uniques": ["[+1] Sight"],
+     "unitTypes": ["Archery","Ranged Gunpowder","Siege"]
+  },
+   {
+     "name": "Spotter III",
+     "prerequisites": ["Spotter II"],
+     "uniques": ["[+1] Sight"],
+     "unitTypes": ["Archery","Ranged Gunpowder","Siege"]
+  },
+  {
+     "name": "Spotter IV",
+     "prerequisites": ["Spotter III"],
+     "uniques": ["[+1] Sight"],
      "unitTypes": ["Archery","Ranged Gunpowder","Siege"]
   },
 
@@ -40,7 +52,7 @@
   {
      "name": "Route March I",
      "prerequisites": ["Rank II"],
-     "uniques": ["[+2] Movement <in [Friendly Land] tiles>"],
+     "uniques": ["[+1] Movement"],
      "unitTypes": ["Mounted","Armored","Sword","Gunpowder","Siege","Archery","Ranged Gunpowder"]
   },
   {
@@ -52,6 +64,12 @@
   {
      "name": "Route March III",
      "prerequisites": ["Route March II"],
+     "uniques": ["[+1] Movement"],
+     "unitTypes": ["Mounted","Armored","Sword","Gunpowder","Siege","Archery","Ranged Gunpowder"]
+  },
+  {
+     "name": "Route March IV",
+     "prerequisites": ["Route March III"],
      "uniques": ["[+1] Movement"],
      "unitTypes": ["Mounted","Armored","Sword","Gunpowder","Siege","Archery","Ranged Gunpowder"]
   },
@@ -113,19 +131,19 @@
   },
   {
      "name": "Rank I",
-     "uniques": ["[+20]% XP gained from combat", "[+10]% Strength"],
+     "uniques": ["[+25]% XP gained from combat", "[+10]% Strength"],
      "unitTypes": ["Ranged Gunpowder","Gunpowder","Armored","Siege","Sword","Mounted","Archery","Scout","Ranged Water","Melee Water","Aircraft Carrier"]
   },
   {
      "name": "Rank II",
      "prerequisites": ["Rank I"],
-     "uniques": ["[+40]% XP gained from combat", "[+10]% Strength"],
+     "uniques": ["[+50]% XP gained from combat", "[+10]% Strength"],
      "unitTypes": ["Ranged Gunpowder","Gunpowder","Armored","Siege","Sword","Mounted","Archery","Scout","Ranged Water","Melee Water","Aircraft Carrier"]
   },
   {
      "name": "Rank III",
      "prerequisites": ["Rank II"],
-     "uniques": ["[+60]% XP gained from combat", "[+10]% Strength"],
+     "uniques": ["[+75]% XP gained from combat", "[+10]% Strength"],
      "unitTypes": ["Ranged Gunpowder","Gunpowder","Armored","Siege","Sword","Mounted","Archery","Scout","Ranged Water","Melee Water","Aircraft Carrier"]
   },
     {
@@ -143,7 +161,7 @@
   {
      "name": "Community Defender",
      "prerequisites": ["Post Rank"],
-     "uniques": ["[+3] Sight", "Can see over obstacles", "[+10]% Strength bonus for [Military] units within [2] tiles"],
+     "uniques": ["[+3] Sight", "Can see over obstacles", "[+10]% Strength bonus for [Military] units within [3] tiles"],
      "unitTypes": ["Ranged Gunpowder","Gunpowder","Armored","Siege","Sword","Mounted","Archery","Scout","Ranged Water","Melee Water","Aircraft Carrier"]
   },
   {
@@ -153,15 +171,9 @@
      "unitTypes": ["Ranged Gunpowder","Gunpowder","Armored","Siege","Sword","Mounted","Archery","Scout","Ranged Water","Melee Water","Aircraft Carrier"]
   },
   {
-     "name": "Martyr",
-     "prerequisites": ["Post Rank"],
-     "uniques": ["Can generate a large amount of culture <by consuming this unit>"],
-     "unitTypes": ["Ranged Gunpowder","Gunpowder","Armored","Siege","Sword","Mounted","Archery","Scout","Ranged Water","Melee Water","Aircraft Carrier"]
-  },
-  {
      "name": "Offensive Drills",
      "prerequisites": ["Rank III"],
-     "uniques": ["[+25]% Strength <when attacking>"],
+     "uniques": ["[+25]% Strength <when attacking>", "[+1] Movement"],
      "unitTypes": ["Ranged Gunpowder","Gunpowder","Armored","Siege","Sword","Mounted","Archery","Scout","Ranged Water","Melee Water","Aircraft Carrier"]
   },
   {
@@ -179,7 +191,7 @@
     {
      "name": "Defensive Drills",
      "prerequisites": ["Rank III"],
-     "uniques": ["[+25]% Strength <when defending>"],
+     "uniques": ["[+25]% Strength <when defending>", "[+1] Sight"],
      "unitTypes": ["Ranged Gunpowder","Gunpowder","Armored","Siege","Sword","Mounted","Archery","Scout","Ranged Water","Melee Water","Aircraft Carrier"]
   },
   {
@@ -202,14 +214,31 @@
   {
      "name": "Raider II",
      "prerequisites": ["Raider I"],
-     "uniques": ["[+25]% Yield from pillaging tiles", "Earn [10]% of killed [Military] unit's [Cost] as [Gold]"],
+     "uniques": ["[+25]% Yield from pillaging tiles", "Earn [20]% of killed [Military] unit's [Cost] as [Gold]", "May capture killed [Enemy] units"],
      "unitTypes": ["Ranged Gunpowder","Gunpowder","Armored","Siege","Sword","Mounted","Archery","Scout","Ranged Water","Melee Water"]
   },
   {
      "name": "Raider III",
      "prerequisites": ["Raider II"],
-     "uniques": ["[+50]% Yield from pillaging tiles", "[+25]% Health from pillaging tiles", "Upon capturing a city, receive [3] times its [Gold] production as [Gold] immediately"],
+     "uniques": ["[+50]% Yield from pillaging tiles", "[+25]% Health from pillaging tiles", "Earn [50]% of the damage done to [City] units as [Gold]"],
      "unitTypes": ["Ranged Gunpowder","Gunpowder","Armored","Siege","Sword","Mounted","Archery","Scout","Ranged Water","Melee Water"]
+  },
+    {
+     "name": "Officer Training I",
+     "uniques": ["[+25]% XP gained from combat", "[Great General] is earned [50]% faster"],
+     "unitTypes": ["Ranged Gunpowder","Gunpowder","Armored","Siege","Sword","Mounted","Archery","Scout","Ranged Water","Melee Water","Aircraft Carrier"]
+  },
+  {
+     "name": "Officer Training II",
+     "prerequisites": ["Officer Training I"],
+     "uniques": ["[+50]% to Flank Attack bonuses", "[Great General] is earned [50]% faster"],
+     "unitTypes": ["Ranged Gunpowder","Gunpowder","Armored","Siege","Sword","Mounted","Archery","Scout","Ranged Water","Melee Water","Aircraft Carrier"]
+  },
+  {
+     "name": "Officer Training III",
+     "prerequisites": ["Officer Training II"],
+     "uniques": ["[+25]% Strength <when stacked with a [Great General] unit>", "[+25]% to Flank Attack bonuses"],
+     "unitTypes": ["Ranged Gunpowder","Gunpowder","Armored","Siege","Sword","Mounted","Archery","Scout","Ranged Water","Melee Water","Aircraft Carrier"]
   },
 ]
 
